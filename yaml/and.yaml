@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: and
+  name: and
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: and
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: and
+    spec:
+      containers:
+      - image: php:7.2-apache
+        name: php
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
