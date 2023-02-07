@@ -18,7 +18,7 @@ spec:
         app: and
     spec:
       containers:
-      - image: php:7.2-apache
+      - image: sab22/myweb:latest
         name: php
         ports:
         - containerPort: 80
